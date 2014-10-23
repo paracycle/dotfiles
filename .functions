@@ -1,3 +1,18 @@
+# Simple Git shortcut
+function g() {
+      if [[ $# == '0' ]]; then
+          git status
+      else
+          case $1 in
+              fuss)
+                  shift
+                  git rebase -i HEAD~"$1";;
+              *)
+                  git "$@";;
+          esac
+      fi
+}
+
 # Simple calculator
 function calc() {
 	local result="";
