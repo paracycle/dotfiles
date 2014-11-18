@@ -197,3 +197,16 @@
 [url "git://gist.github.com/"]
 
   insteadOf = "gist:"
+
+[user]
+        name = Ufuk Kayserilioglu
+        email = ufuk@paralaus.com
+
+[github]
+        user = paracycle
+
+[ghi]
+        token = !security find-internet-password -a paracycle -s github.com -l 'ghi token' -w
+
+[ghi "highlight"]
+        style = monokai
