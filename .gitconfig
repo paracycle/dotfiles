@@ -152,6 +152,9 @@
   # Detect copies as well as renames
   renames = copies
 
+[fetch]
+  prune = true
+
 [help]
 
   # Automatically correct and execute mistyped commands
@@ -178,6 +181,9 @@
   # installations. To use `simple` instead, add this to your `~/.extra` file:
   # `git config --global push.default simple`. See http://git.io/mMah-w.
   default = simple
+
+[rebase]
+  autoSquash = true
 
 # URL shorthands
 
