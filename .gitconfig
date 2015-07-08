@@ -95,6 +95,7 @@
         fi \
   }; f"
 
+  commit-url = "!f() { hub browse -u -- commit/$(git rev-parse HEAD) | pbcopy; echo 'URL copied to clipboard'; }; f"
 
 [apply]
 
